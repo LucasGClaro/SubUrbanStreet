@@ -6,25 +6,114 @@
     <title>Sub Urban Street</title>
     <style>
         body {
-			height: 100%;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			
-            background-color: #18adea; /* cor do background */
-            background-image: linear-gradient(43deg, #18adea 0%, #50c8b0 46%, #0f57c5 100%); /* background degrade */
-            margin: 0; 
-            font-family: Arial, sans-serif; /* fonte padrão */
-            color: #ffffff; /* cor texto */
-            text-align: center; /* centraliza o texto */
+            height: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #18adea;
+            background-image: linear-gradient(43deg, #18adea 0%, #50c8b0 46%, #0f57c5 100%);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero h2 {
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+        .section {
+            padding: 40px 20px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 15px;
+            width: 200px;
+            border-radius: 8px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            padding: 20px;
+            font-size: 0.8em;
+            background-color: rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
 <body>
+
+<header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
     <h1>Sub Urban Street</h1>
     <h2>Loja de Moda Street Wear & Skate Shop</h2>
+</section>
 
+<section class="section" id="produtos">
+    <h3>Produtos em Destaque</h3>
+    <div class="products">
+        <div class="product">
+            <img src="link-da-imagem-1.jpg" alt="Produto 1">
+            <p>Camiseta Street Wear</p>
+            <p>R$ 79,90</p>
+        </div>
+        <div class="product">
+            <img src="link-da-imagem-2.jpg" alt="Produto 2">
+            <p>Boné Estilo Urbano</p>
+            <p>R$ 49,90</p>
+        </div>
+        <div class="product">
+            <img src="link-da-imagem-3.jpg" alt="Produto 3">
+            <p>Skate Profissional</p>
+            <p>R$ 299,90</p>
+        </div>
+    </div>
+</section>
 
+<section class="section" id="sobre">
+    <h3>Sobre Nós</h3>
+    <p>A Sub Urban Street é uma loja especializada em moda street wear e artigos de skate. Inspirada pelo estilo urbano, oferecemos produtos de alta qualidade para quem busca autenticidade e estilo.</p>
+</section>
 
-    
+<section class="section" id="contato">
+    <h3>Contato</h3>
+    <p>Email: contato@suburbanstreet.com</p>
+    <p>Telefone: (11) 99999-9999</p>
+</section>
+
+<footer>
+    <p>&copy; 2023 Sub Urban Street. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
