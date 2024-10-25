@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -11,17 +10,20 @@
             font-family: Arial, sans-serif;
             color: #000000; /* Texto em preto */
             text-align: center;
+            
         }
-
-        /* INICIO MUDAR COR */
-        /* Div principal que imita o body */
+		
+		/* INICIO MUDAR COR */
+		
+		
+		/* Div principal que imita o body */
         .container {
             width: 100%;
             height: 100%;
             transition: background-color 0.5s;
             background-color: #ff9999; /* Cor inicial */
         }
-
+        
         /* Checkbox invisível */
         #toggle-background {
             display: none;
@@ -39,16 +41,17 @@
             transition: background-color 0.3s;
         }
 
+       
+
         /* Alteração de cor quando o checkbox é marcado */
         #toggle-background:checked ~ .container {
-            background-color: #ffffff; /* Cor alternativa para a parte de cima */
+            background-color: #0000; /* Cor alternativa */
         }
+		
+		
+		/* FIM MUDAR COR */
 
-        /* Para o rodapé também mudar de cor */
-        #toggle-background:checked ~ .container footer {
-            background-color: #ffffff; /* Cor alternativa para o rodapé */
-        }
-        /* FIM MUDAR COR */
+
 
         header {
             padding: 20px;
@@ -103,7 +106,7 @@
 
         .product {
             background-color: rgba(0, 0, 0, 0.1); /* Fundo do produto */
-            padding: 20px;
+            padding: 20px; 
             margin: 15px;
             width: 200px;
             border-radius: 8px;
@@ -199,69 +202,75 @@
 
     <header>
         <h1 style="margin: 0;">Sub Urban Street</h1>
-        <nav>
+		<nav>
             <a href="#home">Home</a>
             <a href="#produtos">Produtos</a>
             <a href="#sobre">Sobre Nós</a>
             <a href="#contato">Contato</a>
+			
         </nav>
     </header>
 
-    <input type="checkbox" id="toggle-background">
-    <!-- Label que age como botão -->
+	
+	 <input type="checkbox" id="toggle-background">
+<!-- Label que age como botão -->
     <label for="toggle-background">Mudar Cor de Fundo</label>
+	
+	
+<div class="container">
 
-    <div class="container">
+    <section class="hero" id="home">
+        <h1>Sub Urban Street</h1>
+        <h2>Loja de Moda Street Wear & Skate Shop</h2>
+    </section>
 
-        <section class="hero" id="home">
-            <h1>Sub Urban Street</h1>
-            <h2>Loja de Moda Street Wear & Skate Shop</h2>
-        </section>
 
-        <section class="section" id="produtos">
-            <h3>Produtos em Destaque</h3>
-            <div class="products">
-                <div class="product">
-                    <img src="aaaa.jpg" alt="Camiseta Street Wear + Shorts">
-                    <p>Tênis Street</p>
-                    <p>R$ 89,90</p>
-                    <button>Comprar Agora</button>
-                </div>
-                <div class="product">
-                    <img src="IMG-20241025-WA0011.jpg" alt="Kit Camiseta + Tênis">
-                    <p>Kit Camiseta + Tênis</p>
-                    <p>R$ 159,99</p>
-                    <button>Comprar Agora</button>
-                </div>
-                <div class="product">
-                    <img src="IMG-20241025-WA0007.jpg" alt="Calça Balão preta">
-                    <p>Calça Balão Preta</p>
-                    <p>R$ 179,90</p>
-                    <button>Comprar Agora</button>
-                </div>
+
+
+    <section class="section" id="produtos">
+        <h3>Produtos em Destaque</h3>
+        <div class="products">
+            <div class="product">
+                <img src="aaaa.jpg" alt="Camiseta Street Wear + Shorts">
+                <p>Tênis Street</p>
+                <p>R$ 89,90</p>
+                <button>Comprar Agora</button>
             </div>
-        </section>
-
-        <section class="section" id="sobre">
-            <h3>Sobre Nós</h3>
-            <p>A Sub Urban Street é uma loja especializada em moda street wear e artigos de skate. Inspirada pelo estilo urbano, oferecemos produtos de alta qualidade para quem busca autenticidade e estilo.</p>
-        </section>
-
-        <section class="section" id="contato">
-            <h3>Contato</h3>
-            <p>Email: contato@suburbanstreet.com</p>
-            <p>Telefone: (955) 91378-6919</p>
-            <div class="newsletter">
-                <h4>Assine nossa Newsletter</h4>
-                <input type="email" placeholder="Seu email" />
-                <button>Inscrever-se</button>
+            <div class="product">
+                <img src="IMG-20241025-WA0011.jpg" alt="Kit Camiseta + Tênis">
+                <p>Kit Camiseta + Tênis</p>
+                <p>R$ 159,99</p>
+                <button>Comprar Agora</button>
             </div>
-        </section>
+            <div class="product">
+                <img src="IMG-20241025-WA0007.jpg" alt="Calça Balão preta">
+                <p>Calça Balão Preta</p>
+                <p>R$ 179,90</p>
+                <button>Comprar Agora</button>
+            </div>
+        </div>
+    </section>
 
-        <footer>
-            <p>&copy; 2023 Sub Urban Street ™. Todos os direitos reservados.</p>
-        </footer>
-    </div>
+    <section class="section" id="sobre">
+        <h3>Sobre Nós</h3>
+        <p>A Sub Urban Street é uma loja especializada em moda street wear e artigos de skate. Inspirada pelo estilo urbano, oferecemos produtos de alta qualidade para quem busca autenticidade e estilo.</p>
+    </section>
+
+    <section class="section" id="contato">
+        <h3>Contato</h3>
+        <p>Email: contato@suburbanstreet.com</p>
+        <p>Telefone: (955) 91378-6919</p>
+        <div class="newsletter">
+            <h4>Assine nossa Newsletter</h4>
+            <input type="email" placeholder="Seu email" />
+            <button>Inscrever-se</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sub Urban Street ™. Todos os direitos reservados. ©</p>
+    </footer>
+</div>
 </body>
 
 </html>
