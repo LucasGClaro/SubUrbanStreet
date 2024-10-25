@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
             background-color: #18adea;
             background-image: linear-gradient(43deg, #18adea 0%, #50c8b0 46%, #0f57c5 100%);
         }
+
         header {
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.6);
@@ -21,6 +23,7 @@
             align-items: center;
             flex-wrap: wrap;
         }
+
         nav a {
             color: #ffffff;
             margin: 0 15px;
@@ -28,9 +31,11 @@
             font-weight: bold;
             transition: color 0.3s;
         }
+
         nav a:hover {
             color: #50c8b0;
         }
+
         .hero {
             padding: 50px 20px;
             background-attachment: fixed;
@@ -40,22 +45,27 @@
             color: #ffffff;
             text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
         }
+
         .hero h1 {
             font-size: 3em;
             margin: 0;
         }
+
         .hero h2 {
             font-size: 1.5em;
             font-weight: 300;
         }
+
         .section {
             padding: 40px 20px;
         }
+
         .products {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
+
         .product {
             background-color: rgba(255, 255, 255, 0.1);
             padding: 20px;
@@ -65,17 +75,21 @@
             transition: transform 0.3s;
             text-align: left;
         }
+
         .product:hover {
             transform: scale(1.05);
         }
+
         .product img {
             width: 100%;
             border-radius: 8px;
             transition: opacity 0.3s;
         }
+
         .product img:hover {
             opacity: 0.8;
         }
+
         .product button {
             width: 100%;
             padding: 10px;
@@ -87,17 +101,21 @@
             margin-top: 10px;
             transition: background-color 0.3s;
         }
+
         .product button:hover {
             background-color: #0f57c5;
         }
+
         footer {
             padding: 20px;
             font-size: 0.8em;
             background-color: rgba(0, 0, 0, 0.6);
         }
+
         .newsletter {
             margin-top: 20px;
         }
+
         .newsletter input[type="email"] {
             padding: 10px;
             border-radius: 5px;
@@ -105,6 +123,7 @@
             width: 200px;
             margin-right: 10px;
         }
+
         .newsletter button {
             padding: 10px;
             background-color: #50c8b0;
@@ -114,9 +133,11 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
+
         .newsletter button:hover {
             background-color: #0f57c5;
         }
+
         .social-icons a {
             margin: 0 10px;
             text-decoration: none;
@@ -124,9 +145,11 @@
             color: #ffffff;
             transition: color 0.3s;
         }
+
         .social-icons a:hover {
             color: #50c8b0;
         }
+
         @media (max-width: 600px) {
             .products {
                 flex-direction: column;
@@ -135,40 +158,41 @@
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1 style="margin: 0;">Sub Urban Street</h1>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#sobre">Sobre Nós</a>
-        <a href="#contato">Contato</a>
-    </nav>
-</header>
+    <header>
+        <h1 style="margin: 0;">Sub Urban Street</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
 
-<section class="hero" id="home">
-    <h1>Sub Urban Street</h1>
-    <h2>Loja de Moda Street Wear & Skate Shop</h2>
-</section>
+    <section class="hero" id="home">
+        <h1>Sub Urban Street</h1>
+        <h2>Loja de Moda Street Wear & Skate Shop</h2>
+    </section>
 
-<section class="section" id="produtos">
-    <h3>Produtos em Destaque</h3>
-    <div class="products">
-        <div class="product">
-            <img src="veio.jpg" alt="Camiseta Street Wear + Shorts">
-            <p>Camiseta Street Wear</p>
-            <p>R$ 89,90</p>
-            <button>Comprar Agora</button>
-        </div>
-        <div class="product">
-            <img src="IMG-20241025-WA0011.jpg" alt="Kit Camiseta + Tênis">
-            <p>Boné Estilo Urbano</p>
-            <p>R$ 159,99</p>
-            <button>Comprar Agora</button>
-        </div>
-        <div class="product">
-            <img src="IMG-20241025-WA0007.jpg" alt="Calça Balão preta>
+    <section class="section" id="produtos">
+        <h3>Produtos em Destaque</h3>
+        <div class="products">
+            <div class="product">
+                <img src="veio.jpg" alt="Camiseta Street Wear + Shorts">
+                <p>Camiseta Street Wear</p>
+                <p>R$ 89,90</p>
+                <button>Comprar Agora</button>
+            </div>
+            <div class="product">
+                <img src="IMG-20241025-WA0011.jpg" alt="Kit Camiseta + Tênis">
+                <p>Boné Estilo Urbano</p>
+                <p>R$ 159,99</p>
+                <button>Comprar Agora</button>
+            </div>
+            <div class="product">
+                <img src="IMG-20241025-WA0007.jpg" alt="Calça Balão preta>
             <p>Skate Profissional</p>
             <p>R$ 179,90</p>
             <button>Comprar Agora</button>
@@ -176,30 +200,32 @@
     </div>
 </section>
 
-<section class="section" id="sobre">
-    <h3>Sobre Nós</h3>
-    <p>A Sub Urban Street é uma loja especializada em moda street wear e artigos de skate. Inspirada pelo estilo urbano, oferecemos produtos de alta qualidade para quem busca autenticidade e estilo.</p>
-</section>
+<section class=" section" id="sobre">
+                <h3>Sobre Nós</h3>
+                <p>A Sub Urban Street é uma loja especializada em moda street wear e artigos de skate. Inspirada pelo
+                    estilo urbano, oferecemos produtos de alta qualidade para quem busca autenticidade e estilo.</p>
+    </section>
 
-<section class="section" id="contato">
-    <h3>Contato</h3>
-    <p>Email: contato@suburbanstreet.com</p>
-    <p>Telefone: (955) 913786919</p>
-    <div class="newsletter">
-        <h4>Assine nossa Newsletter</h4>
-        <input type="email" placeholder="Seu email" />
-        <button>Inscrever-se</button>
-    </div>
-    <div class="social-icons">
-        <a href="https://facebook.com" target="_blank">📘</a>
-        <a href="https://instagram.com" target="_blank">📷</a>
-        <a href="https://x.com" target="_blank">🐦</a>
-    </div>
-</section>
+    <section class="section" id="contato">
+        <h3>Contato</h3>
+        <p>Email: contato@suburbanstreet.com</p>
+        <p>Telefone: (955) 913786919</p>
+        <div class="newsletter">
+            <h4>Assine nossa Newsletter</h4>
+            <input type="email" placeholder="Seu email" />
+            <button>Inscrever-se</button>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">📘</a>
+            <a href="https://instagram.com" target="_blank">📷</a>
+            <a href="https://x.com" target="_blank">🐦</a>
+        </div>
+    </section>
 
-<footer>
-    <p>&copy; 2023 Sub Urban Street ™. Todos os direitos reservados. ©</p>
-</footer>
+    <footer>
+        <p>&copy; 2023 Sub Urban Street ™. Todos os direitos reservados. ©</p>
+    </footer>
 
 </body>
+
 </html>
