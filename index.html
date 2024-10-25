@@ -6,28 +6,39 @@
     <title>Sub Urban Street</title>
     <style>
         body {
-            height: 100%;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-color: #18adea;
-            background-image: linear-gradient(43deg, #18adea 0%, #50c8b0 46%, #0f57c5 100%);
             margin: 0;
             font-family: Arial, sans-serif;
             color: #ffffff;
             text-align: center;
+            background-color: #18adea;
+            background-image: linear-gradient(43deg, #18adea 0%, #50c8b0 46%, #0f57c5 100%);
         }
         header {
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
         }
         nav a {
             color: #ffffff;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #50c8b0;
         }
         .hero {
             padding: 50px 20px;
+            background-attachment: fixed;
+            background-image: url('link-da-imagem.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
         }
         .hero h1 {
             font-size: 3em;
@@ -51,21 +62,83 @@
             margin: 15px;
             width: 200px;
             border-radius: 8px;
+            transition: transform 0.3s;
+            text-align: left;
+        }
+        .product:hover {
+            transform: scale(1.05);
         }
         .product img {
             width: 100%;
             border-radius: 8px;
+            transition: opacity 0.3s;
+        }
+        .product img:hover {
+            opacity: 0.8;
+        }
+        .product button {
+            width: 100%;
+            padding: 10px;
+            background-color: #50c8b0;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .product button:hover {
+            background-color: #0f57c5;
         }
         footer {
             padding: 20px;
             font-size: 0.8em;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .newsletter {
+            margin-top: 20px;
+        }
+        .newsletter input[type="email"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 200px;
+            margin-right: 10px;
+        }
+        .newsletter button {
+            padding: 10px;
+            background-color: #50c8b0;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .newsletter button:hover {
+            background-color: #0f57c5;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #50c8b0;
+        }
+        @media (max-width: 600px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
+    <h1 style="margin: 0;">Sub Urban Street</h1>
     <nav>
         <a href="#home">Home</a>
         <a href="#produtos">Produtos</a>
@@ -83,19 +156,22 @@
     <h3>Produtos em Destaque</h3>
     <div class="products">
         <div class="product">
-            <img src="unnamed.png" alt="Produto 1">
-            <p>Conjuntos Street Wear</p>
+            <img src="link-da-imagem-1.jpg" alt="Camiseta Street Wear">
+            <p>Camiseta Street Wear</p>
             <p>R$ 79,90</p>
+            <button>Comprar Agora</button>
         </div>
         <div class="product">
-            <img src="link-da-imagem-2.jpg" alt="Produto 2">
+            <img src="link-da-imagem-2.jpg" alt="Boné Estilo Urbano">
             <p>Boné Estilo Urbano</p>
             <p>R$ 49,90</p>
+            <button>Comprar Agora</button>
         </div>
         <div class="product">
-            <img src="link-da-imagem-3.jpg" alt="Produto 3">
+            <img src="link-da-imagem-3.jpg" alt="Skate Profissional">
             <p>Skate Profissional</p>
             <p>R$ 299,90</p>
+            <button>Comprar Agora</button>
         </div>
     </div>
 </section>
@@ -108,7 +184,17 @@
 <section class="section" id="contato">
     <h3>Contato</h3>
     <p>Email: contato@suburbanstreet.com</p>
-    <p>Telefone: (95) 99137-8691</p>
+    <p>Telefone: (11) 99999-9999</p>
+    <div class="newsletter">
+        <h4>Assine nossa Newsletter</h4>
+        <input type="email" placeholder="Seu email" />
+        <button>Inscrever-se</button>
+    </div>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">📘</a>
+        <a href="https://instagram.com" target="_blank">📷</a>
+        <a href="https://twitter.com" target="_blank">🐦</a>
+    </div>
 </section>
 
 <footer>
