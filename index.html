@@ -41,12 +41,11 @@
 
         /* Alteração de cor quando o checkbox é marcado */
         #toggle-background:checked ~ .container {
-            background-color: #ff0000; /* Cor alternativa para a parte de cima */
+            background-color: #ff9999; /* Cor rosa */
         }
 
-        /* Para o rodapé também mudar de cor */
         #toggle-background:checked ~ .container footer {
-            background-color: #ff0000; /* Cor alternativa para o rodapé */
+            background-color: #ff9999; /* Rodapé em rosa */
         }
         /* FIM MUDAR COR */
 
@@ -146,6 +145,7 @@
             font-size: 0.8em;
             background-color: #f8f8f8; /* Barra de baixo */
             color: #000000; /* Texto do rodapé em preto */
+            transition: background-color 0.5s; /* Para uma transição suave */
         }
 
         .newsletter {
